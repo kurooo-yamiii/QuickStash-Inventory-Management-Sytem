@@ -1,0 +1,952 @@
+@keyframes transition {
+  from {
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0; 
+  }
+  to {
+      opacity: 1; 
+  }
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+}
+.body {
+	display: flex;
+}
+
+/* Header Format */
+.header {
+	  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background: #1135a0;
+    color: #fff;
+    height: 60px;
+}
+/* Header Span Icon costumization */
+.header span {
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+}
+.header span:hover {
+	color: #127b8e;
+}
+/* =============================== */
+
+/* Use for Tittle Name of the Page */
+.u-name {
+	font-size: 20px;
+}
+.u-name b {
+	color: #e3b154;
+}
+/* =============================== */
+
+
+/* Side Bar Format */
+.side-bar {
+	width: 250px;
+    background: #13357f;
+	height: 677px;
+	max-height: 677px;
+	transition: 500ms width;
+}
+/* Side Bar Format for the list of button */
+.side-bar ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.side-bar ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms background;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+.side-bar ul li:hover {
+	background: rgb(14, 14, 120);
+}
+
+.side-bar ul li b a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.side-bar ul li b a i {
+	display: inline-block;
+	padding-right: 15px;
+	font-size: 23px;
+}
+
+.side-bar span {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 30px;
+}
+
+.side-bar p {
+	display: inline-block;
+
+}
+
+.side-bar .direction {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	text-align: center;
+}
+
+/* Side Bar use format including picture and Name */
+.user-p {
+	text-align: center;
+	padding-left: 10px;
+	padding-top: 25px;
+}
+.user-p img {
+	width: 130px;
+  height: 120px;
+	border-radius: 50%;
+  margin-left: -14px;
+}
+.user-p h4 {
+  letter-spacing: 3px;
+  color: #ccc;
+  padding: 8px 0;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px
+
+}
+
+#sideicon img {
+  width: 40px;
+  height: 40px;
+	border-radius: 50%;
+}
+
+/* Costumize Table of Approved DTR */
+.eval-studd {
+    display: grid;
+    padding: 20px;
+}
+
+.eval-studd h2 {
+	margin-top: -10px;
+    margin-bottom: 20px; 
+    font-size: 18px;
+}
+
+.eval-studd h3 {
+	margin-top: -10px;
+    margin-bottom: -20px; 
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+	margin-top: 30px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: gold;
+    color: navy;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+
+#datee {
+    display: block;
+    border: 2px solid #ccc;
+    width: 40%;
+    padding: 8px;
+    margin: 5px 0; /* Adjust margin as needed */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sortalign {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin: 0; /* Remove default margin */
+}
+
+.sortalign select {
+    margin-right: 10px; /* Adjust spacing between select and other elements */
+}
+
+#consume {
+        width: 95%;
+        }
+
+		/* Form for the body (Changing Forms) */
+#content {
+	width: 100%;
+	background-image: url(resources/bg.png);
+	background-size: cover;
+  	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#content form {
+	width: 96%;
+	height: 630px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   	align-items: center;
+    justify-content: center;
+	margin-top: -10px;
+	animation: transition 1s;
+	transition: ease-in-out;
+	max-width: 100%; 
+	max-height: 630px;
+    overflow-y: auto; 
+ 
+	
+}
+
+/* Button for DTR */
+form td .blue-button {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-right: 2%;
+}
+
+form td .blue-button:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+  form td .red-button {
+    background-color: #d9534f; 
+    border-color: #d9534f; 
+    color: #fff; 
+    padding: 7px 16px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-right: 2%;
+  }
+  
+  form td .red-button:hover {
+    background-color: #c9302c; 
+    border-color: #ac2925; 
+  }
+
+  form td .green-button {
+	background-color: #388E3C; /* Darker Green background */
+	border-color: #388E3C; /* Darker Green border */
+    color: #fff; 
+    padding: 7px 16px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px; 
+    cursor: pointer;
+  }
+  
+  form td .green-button:hover {
+    background-color: rgb(22, 86, 14); 
+    border-color: rgb(22, 86, 14); 
+  }
+
+  form td .violet-button {
+    background-color: #8E44AD; /* Violet background */
+    border-color: #8E44AD; /* Violet border */
+    color: #fff;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form td .violet-button:hover {
+    background-color: #6C3483; /* Darker violet on hover */
+    border-color: #6C3483; /* Darker violet border on hover */
+}
+  /* Style for the checkbox input */
+  .switch-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+  }
+
+  
+ .divider {
+	margin-top: 8px;
+	margin-bottom: 8px;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+}
+
+.space {
+  height: 20px;
+  width: 100%;
+}
+
+.radio-container {
+  gap: 8px;
+  padding: 10px 1px;
+  display: flex;
+}
+
+.margin-table {
+  margin-top: 2px;
+}
+
+.todo-item {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  border-radius: 5px;
+}
+
+.todo-item h2 {
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 17px;
+  margin-left: 2.7%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+.todo-item small {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+  color: #888;
+  padding-left: 30px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.removee-to-do {
+  display: block;
+  float: right;
+  padding-top: 5px;
+  width: 80px;
+  height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid darkred; 
+  color:white; 
+  background-color: darkred; 
+  font-size: 15px;
+  text-align: center;
+  transition: background 1s;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-right: -12px;
+ padding-left: 10px;
+}
+
+.todo-item span.ave {
+  color: #4F6128;
+  font-weight: 700;
+  margin-left: 5px;
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+
+.table-header {
+  color: white;
+  background: navy;
+  padding: 5px 20px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+/* Search Properties */
+
+.search-label {
+	font-size: 17px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.search-input {
+	padding: 10px;
+	margin-right: 5px;
+  width: 350px;
+    
+}
+
+.search-button {
+	background-color: navy;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the pop-up form */
+#popup-form {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#overlay form {
+  height: 60%;
+  width: 28%;
+  opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+}
+
+#overlay2 form {
+  height: 60%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#overlay3 form {
+  height: 60%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#overlay4 form {
+  height: 29%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#inventoryForm input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#inventoryForm label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#inventoryForm2 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#inventoryForm2 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#inventoryForm3 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#inventoryForm3 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#inventoryForm4 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#inventoryForm4 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+.remove-space {
+  margin-top: -8%;
+}
+
+.choice-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  margin-right: 10px;
+}
+
+.choice-button {
+	background-color: navy;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3px;
+    border-radius: 7px;
+}
+
+ /* Notifcation Design */
+
+ form .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: -20px;
+}
+
+form .alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+
+
+form .alert-error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+/* CSS for Pop-Up Tools */
+
+#tooloverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#tooloverlay form {
+  height: 60%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#toolForm input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#toolForm label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#tooloverlay2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#tooloverlay2 form {
+  height: 60%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#toolForm2 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#toolForm2 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#tooloverlay3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#tooloverlay3 form {
+  height: 66%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#toolForm3 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#toolForm3 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#tooloverlay4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#tooloverlay4 form {
+  height: 29%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#toolForm4 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#toolForm4 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#tooloverlay5 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#tooloverlay5 form {
+  height: 29%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#toolForm5 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#toolForm5 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#tooloverlay6 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#tooloverlay6 form {
+  height: 32%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#toolForm6 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#toolForm6 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+/* CSS for Account Form */
+
+#accoverlay form {
+  height: 50%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#accoverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#accForm input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#accForm label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#accForm .username {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+#accForm .gmail {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+#accoverlay2 form {
+  height: 50%;
+  width: 28%;
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+#accoverlay2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+#accForm2 input, select {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+#accForm2 label {
+	color: #888;
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 2%;
+}
+
+#accForm2 .username {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+#accForm2 .gmail {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.donutRow {
+  display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+}
+
+.donut {
+  padding: 5px;
+  text-align: center;
+}
+
+.donut-title {
+  text-align: center;
+  font-size: 20px;
+}
+
+#layoutbtn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; 
+  font-weight: 500;
+}
